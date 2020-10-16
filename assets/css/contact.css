@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  box-sizing: border-box;
+  width: 100vw;
+  min-height: 100vh;
+}
+a {
+  text-decoration: none;
+}
+header {
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: blueviolet;
+  color: whitesmoke;
+}
+nav ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-evenly;
+  height: 5vh;
+  background-color: cornflowerblue;
+  align-items: center;
+}
+
+nav ul li:hover {
+  font-size: calc(1vw + 1vh);
+}
+.active {
+  font-size: calc(1vw + 1vh);
+}
+a {
+  color: aqua;
+}
+.active a {
+  color: white;
+}
+
+main {
+  height: 75vh;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+main form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+}
+main div img {
+  max-width: 100%;
+  height: auto;
+}
+form label,
+form input,
+textarea {
+  margin: 1.5%;
+}
+form input {
+  padding: 1%;
+}
+button {
+  margin: 2%;
+  padding: 1.5%;
+  cursor: pointer;
+  background-color: cornflowerblue;
+  overflow: hidden;
+  color: white;
+  transition: all 0.5s ease-in-out;
+}
+button:hover {
+  color: white;
+  background-color: blueviolet;
+}
